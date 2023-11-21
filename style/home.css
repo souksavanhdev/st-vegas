@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: scroll;
+}
+
+
+.button-login {
+    width: 80px;
+    height: 30px;
+    border-radius: 16px;
+    border: 1px solid #A68859;
+    color: #FFF;
+    font-family: Noto Sans Thai;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: #000;
+}
+
+.grid-container {
+    display: flex;
+    background: #0D0D0D;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 375px;
+    height: 80px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+/* Optional styling for grid items */
+.grid-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Noto Sans Thai;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.menu-item {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 113px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid var(--3, #F9DF7B);
+    background: #2E2E2E;
+}
+
+.menu-text-item {
+    margin-top: 6px;
+    color: #FFF;
+    text-align: center;
+    font-family: Noto Sans Thai;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text-show {
+    color: #FFF;
+    text-align: center;
+    font-family: Noto Sans Thai;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.63px;
+}
+
+.text-paragrap {
+    color: #FFF;
+    font-family: Noto Sans Thai;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.carousel {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+
+.container{
+    padding-top: 150px;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+.copy{
+    padding-top: 250px;
+}
+
+  /* Style for the container */
+  .marquee-container {
+    overflow: hidden;
+  }
+
+  /* Style for the scrolling text */
+  .marquee-text {
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+
+  /* Keyframes for the animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+ /* Style for the image container */
+ .image-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  /* Style for the image */
+  .image-container img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Style for the button */
+  .image-container .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  /* Scale the image on hover */
+  .image-container:hover img {
+    transform: scale(1.2);
+    opacity: 60%;
+    border: 1px solid blue;
+  }
+
+  /* Show the button on hover */
+  .image-container:hover .button {
+    display: block;
+  }
